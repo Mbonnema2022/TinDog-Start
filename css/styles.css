@@ -1,0 +1,41 @@
+.navbar li {
+    float: left;
+  }
+  .navbar li+li::before {
+    color: gray;
+    content: ">";
+  }
+
+  .navbar a::before,
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+
+  .navbar a::before {
+    left: -10px;
+  }
+  
+
+  .navbar a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: darkcyan;
+  }
+
+  .navbar a {
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+  }
+
+ 
